@@ -2,13 +2,13 @@ import React from 'react';
 
 const Navbar = () => {
   const navLinks = [
-    { name: 'About', href: '#about' },
-    { name: 'Programs', href: '#programs' },
-    { name: 'Events', href: '#events' },
-    { name: 'Sponsorship', href: '#sponsorship' },
-    { name: 'Media', href: '#media' },
-    { name: 'Gallery', href: '#gallery' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'About', href: '/#about' },
+    { name: 'Programs', href: '/#programs' },
+    { name: 'Events', href: '/#events' },
+    { name: 'Sponsorship', href: '/#sponsorship' },
+    { name: 'Media', href: '/media' },
+    { name: 'Gallery', href: '/gallery' },
+    { name: 'Contact', href: '/#contact' },
   ];
 
   return (
@@ -33,7 +33,7 @@ const Navbar = () => {
           </ul>
         </div>
         
-        <a href="#home" className="btn btn-ghost text-xl font-bold">
+        <a href="/#home" className="btn btn-ghost text-2xl font-bold">
           GSEA
         </a>
       </div>
@@ -53,7 +53,7 @@ const Navbar = () => {
 
       {/* --- NAVBAR END --- */}
       <div className="navbar-end">
-        <a href="#sponsorship" className="btn btn-primary text-white">
+        <a href="/#sponsorship" className="btn btn-primary text-white">
           Get Involved
         </a>
       </div>
