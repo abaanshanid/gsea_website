@@ -2,13 +2,13 @@ import React from 'react';
 
 const Navbar = () => {
   const navLinks = [
-    { name: 'About', href: '/#about' },
-    { name: 'Programs', href: '/#programs' },
-    { name: 'Events', href: '/#events' },
-    { name: 'Sponsorship', href: '/#sponsorship' },
+    { name: 'About', href: '/about' },
+    { name: 'Programs', href: '/programs' },
+    { name: 'Events', href: '/events' },
+    { name: 'Sponsorship', href: '/sponsorship' },
     { name: 'Media', href: '/media' },
     { name: 'Gallery', href: '/gallery' },
-    { name: 'Contact', href: '/#contact' },
+    { name: 'Contact', href: '/contact' },
   ];
 
   return (
