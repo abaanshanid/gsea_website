@@ -23,7 +23,7 @@ const featuredArticle = {
 
 const newsArticles = [
   {
-    image: "https://picsum.photos/800/450",
+    image: "C:/Users/DELL/OneDrive/Desktop/Gallery Pics/gallery1.jpg",
     date: "April 3, 2026",
     tag: "Event",
     title: "Inaugural Global South Universities Forum Opens in New Delhi",

@@ -6,13 +6,13 @@ import { Play, Image as ImageIcon, ArrowRight } from "lucide-react";
 // TODO: Replace these placeholder paths with the real image files once you
 // get them from your teammate (likely belongs in public/images/gallery/).
 const galleryItems = [
-  { src: "https://picsum.photos/800/450", category: "Conferences", caption: "Plenary session, Global South Forum" },
-  { src: "https://picsum.photos/800/450", category: "Conferences", caption: "Panel discussion on infrastructure finance" },
-  { src: "https://picsum.photos/800/450", category: "Workshops", caption: "Engineering leadership workshop" },
-  { src: "https://picsum.photos/800/450", category: "Workshops", caption: "Cross-border collaboration session" },
-  { src: "https://picsum.photos/800/450", category: "Community", caption: "Member delegation, regional summit" },
-  { src: "https://picsum.photos/800/450", category: "Community", caption: "Partnership signing ceremony" },
-  { src: "https://picsum.photos/800/450", category: "Conferences", caption: "Closing address, annual conference" },
+  { src: "/gallery_assets/gallery1.jpg", category: "Conferences", caption: "Plenary session, Global South Forum" },
+  { src: "/gallery_assets/gallery2.jpg", category: "Conferences", caption: "Panel discussion on infrastructure finance" },
+  { src: "/gallery_assets/gallery3.jpg", category: "Workshops", caption: "Engineering leadership workshop" },
+  { src: "/gallery_assets/gallery4.jpg", category: "Workshops", caption: "Cross-border collaboration session" },
+  { src: "/gallery_assets/gallery5.jpg", category: "Community", caption: "Member delegation, regional summit" },
+  { src: "/gallery_assets/gallery6.jpg", category: "Community", caption: "Partnership signing ceremony" },
+  { src: "/gallery_assets/gallery7.jpg", category: "Conferences", caption: "Closing address, annual conference" },
 ];
 
 const filters = [
