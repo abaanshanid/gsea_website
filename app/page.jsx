@@ -11,6 +11,7 @@ import {
 } from "lucide-react";
 import Navbar from "./components/NavBar";
 
+
 export default function Home() {
   return (
     /* 1. Added 'h-screen overflow-y-auto scroll-smooth snap-y snap-mandatory' to the parent wrapper.
@@ -118,11 +119,11 @@ export default function Home() {
             <h1 className="text-4xl md:text-6xl font-black tracking-tight leading-none mb-6 drop-shadow-md">
               <span className="text-primary">Global South </span>
               <br className="hidden md:inline" />
-              <span className="text-base-content">Engineering Alliance</span>
+              <span className="text-base-content">Engineers Association</span>
             </h1>
             <p className="text-lg md:text-xl text-base-content/70 max-w-2xl mx-auto mb-8">
               Transforming local engineering expertise into global leadership to
-              build a highly sustainable, resilient, and inclusive world.
+              build a highly sustainable, resilient, and inclusive world
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <a
@@ -340,7 +341,7 @@ export default function Home() {
                 GSEA
               </div>
               <p className="font-medium text-sm opacity-80">
-                Global South Engineering Alliance <br />
+                Global South Engineers Association <br />
                 An initiative by the Global South Economic Forum (GSEF)
               </p>
               <p className="text-xs opacity-50 mt-4">
