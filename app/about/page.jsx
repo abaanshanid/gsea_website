@@ -13,7 +13,7 @@ import {
   Scale,
 } from "lucide-react";
 import Navbar from "../components/NavBar";
-
+import Footer from "../components/Footer";
 export default function About() {
   return (
     /* FIXED: Changed flex-col to block/relative layout to let snap children track perfectly against the window height */
@@ -573,23 +573,7 @@ export default function About() {
       </section>
 
       {/* --- SYSTEM FOOTER --- */}
-      {/* FIXED: Formatted the footer as its own independent snapping node so it doesn't leak into panel dimensions */}
-      <footer
-        id="contact"
-        className="footer footer-center p-8 bg-neutral text-neutral-content rounded-t-xl shrink-0 snap-end"
-      >
-        <aside>
-          <div className="font-black text-xl tracking-wider mb-1">GSEA</div>
-          <p className="font-medium text-xs opacity-70">
-            Global South Engineering Alliance <br />
-            An initiative by the Global South Economic Forum (GSEF)
-          </p>
-          <p className="text-[10px] opacity-40 mt-3">
-            Copyright © 2025 GSEA — Global South Engineering Alliance. All
-            rights reserved.
-          </p>
-        </aside>
-      </footer>
+     <Footer></Footer>
     </div>
   );
 }

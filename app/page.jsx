@@ -10,8 +10,7 @@ import {
   ChevronDown,
 } from "lucide-react";
 import Navbar from "./components/NavBar";
-
-
+import Footer from "./components/Footer";
 export default function Home() {
   return (
     /* 1. Added 'h-screen overflow-y-auto scroll-smooth snap-y snap-mandatory' to the parent wrapper.
@@ -332,23 +331,7 @@ export default function Home() {
           </section>
 
           {/* --- FOOTER --- */}
-          <footer
-            id="contact"
-            className="footer footer-center p-10 bg-neutral text-neutral-content rounded-t-xl shrink-0"
-          >
-            <aside>
-              <div className="font-black text-2xl tracking-wider mb-2">
-                GSEA
-              </div>
-              <p className="font-medium text-sm opacity-80">
-                Global South Engineers Association <br />
-                An initiative by the Global South Economic Forum (GSEF)
-              </p>
-              <p className="text-xs opacity-50 mt-4">
-                Copyright © {new Date().getFullYear()} - All rights reserved.
-              </p>
-            </aside>
-          </footer>
+          <Footer></Footer>
         </div>
       </main>
     </div>
