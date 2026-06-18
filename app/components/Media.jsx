@@ -11,7 +11,7 @@ import {
 // TODO: replace these placeholder image paths with real files once you get
 // them from your teammate (e.g. public/images/media/...).
 const featuredArticle = {
-  image: "https://picsum.photos/800/450",
+  image: "/media_assets/media1.jpg",
   date: "May 16, 2026",
   tag: "Announcement",
   title: "AfDB & AARDO Formalise Strategic Partnership with GS-IDF",
@@ -23,7 +23,7 @@ const featuredArticle = {
 
 const newsArticles = [
   {
-    image: "C:/Users/DELL/OneDrive/Desktop/Gallery Pics/gallery1.jpg",
+    image: "/media_assets/media2.jpg",
     date: "April 3, 2026",
     tag: "Event",
     title: "Inaugural Global South Universities Forum Opens in New Delhi",
@@ -31,7 +31,7 @@ const newsArticles = [
       "Over 70 university leaders gathered to shape the future of knowledge diplomacy and research mobility across the Global South.",
   },
   {
-    image: "https://picsum.photos/800/450",
+    image: "/media_assets/media3.jpg",
     date: "March 22, 2026",
     tag: "Partnership",
     title: "Diaspora Investment Summit Mobilises $250M Commitment",
@@ -39,7 +39,7 @@ const newsArticles = [
       "GSDF-led initiative connects diaspora investors with agribusiness and renewable energy projects across the Global South.",
   },
   {
-    image: "https://picsum.photos/800/450",
+    image: "/media_assets/media4.jpg",
     date: "March 1, 2026",
     tag: "Community",
     title: "Global South Sustainable Development Summit Announced for June 2026",
