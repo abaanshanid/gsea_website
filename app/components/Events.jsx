@@ -481,7 +481,7 @@ export default function Events() {
                   </p>
                 </div>
                 <a
-                  href="#contact"
+                  href="/contact"
                   className="btn btn-white font-bold shadow-lg group gap-2 shrink-0"
                 >
                   Become a Partner Member

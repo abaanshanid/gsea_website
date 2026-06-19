@@ -142,7 +142,7 @@ export default function Sponsorship() {
               <a href="#packages" className="btn btn-primary text-primary-content font-bold gap-2">
                 View Packages <ArrowRight className="w-4 h-4" />
               </a>
-              <a href="#contact" className="btn btn-outline border-base-100/20 text-base-100 hover:bg-base-100/10 hover:border-base-100/40 font-bold">
+              <a href="/contact" className="btn btn-outline border-base-100/20 text-base-100 hover:bg-base-100/10 hover:border-base-100/40 font-bold">
                 Contact Us
               </a>
             </div>
@@ -337,7 +337,7 @@ export default function Sponsorship() {
                   </p>
                 </div>
               </div>
-              <a href="#contact" className="btn btn-primary text-primary-content font-bold tracking-wider gap-2 shrink-0">
+              <a href="/contact" className="btn btn-primary text-primary-content font-bold tracking-wider gap-2 shrink-0">
                 CONTACT US <ArrowRight className="w-4 h-4" />
               </a>
             </div>
@@ -505,7 +505,7 @@ export default function Sponsorship() {
 
               {/* Card 2 — Contact Us */}
               <a
-                href="#contact"
+                href="/contact"
                 className="group flex flex-col gap-4 bg-base-100/5 hover:bg-base-100/10 border border-base-100/10 hover:border-base-100/20 rounded-2xl p-8 transition-all duration-300 cursor-pointer"
               >
                 <div className="flex items-center justify-between">

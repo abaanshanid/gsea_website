@@ -335,7 +335,7 @@ export default function Media() {
           </p>
           <div className="pt-2">
             <a
-              href="/#contact"
+              href="/contact"
               className="btn btn-white font-bold shadow-md group gap-2"
             >
               Get in Touch
