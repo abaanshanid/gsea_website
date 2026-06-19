@@ -8,10 +8,10 @@ import { Play, Image as ImageIcon, ArrowRight } from "lucide-react";
 const galleryItems = [
   { src: "/gallery_assets/gallery1.jpg", category: "Conferences", caption: "Plenary session, Global South Forum" },
   { src: "/gallery_assets/gallery2.jpg", category: "Conferences", caption: "Panel discussion on infrastructure finance" },
-  { src: "/gallery_assets/gallery3.jpg", category: "Workshops", caption: "Engineering leadership workshop" },
-  { src: "/gallery_assets/gallery4.jpg", category: "Workshops", caption: "Cross-border collaboration session" },
-  { src: "/gallery_assets/gallery5.jpg", category: "Community", caption: "Member delegation, regional summit" },
-  { src: "/gallery_assets/gallery6.jpg", category: "Community", caption: "Partnership signing ceremony" },
+  { src: "/gallery_assets/gallery3.jpg", category: "Conferences", caption: "Engineering leadership workshop" },
+  { src: "/gallery_assets/gallery4.jpg", category: "Conferences", caption: "Cross-border collaboration session" },
+  { src: "/gallery_assets/gallery5.jpg", category: "Conferences", caption: "Member delegation, regional summit" },
+  { src: "/gallery_assets/gallery6.jpg", category: "Conferences", caption: "Partnership signing ceremony" },
   { src: "/gallery_assets/gallery7.jpg", category: "Conferences", caption: "Closing address, annual conference" },
 ];
 
@@ -208,7 +208,7 @@ export default function Gallery() {
           </p>
           <div className="pt-2">
             <a
-              href="/#contact"
+              href="/contact"
               className="btn btn-white font-bold shadow-md group gap-2"
             >
               Send Us Your Photos
