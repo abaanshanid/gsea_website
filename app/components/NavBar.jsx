@@ -53,7 +53,7 @@ const Navbar = () => {
 
       {/* --- NAVBAR END --- */}
       <div className="navbar-end">
-        <a href="/#sponsorship" className="btn btn-primary text-white">
+        <a href="/sponsorship" className="btn btn-primary text-white">
           Get Involved
         </a>
       </div>

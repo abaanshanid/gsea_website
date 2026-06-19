@@ -7,6 +7,7 @@ import {
   Handshake,
   Newspaper,
 } from "lucide-react";
+import Footer from "./Footer";
 
 // TODO: replace these placeholder image paths with real files once you get
 // them from your teammate (e.g. public/images/media/...).
@@ -343,6 +344,7 @@ export default function Media() {
           </div>
         </div>
       </section>
+      <Footer />
     </div>
   );
 }

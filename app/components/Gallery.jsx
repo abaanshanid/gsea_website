@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { Play, Image as ImageIcon, ArrowRight } from "lucide-react";
+import Footer from "./Footer";
 
 // TODO: Replace these placeholder paths with the real image files once you
 // get them from your teammate (likely belongs in public/images/gallery/).
@@ -217,6 +218,7 @@ export default function Gallery() {
           </div>
         </div>
       </section>
+      <Footer />
     </div>
   );
 }

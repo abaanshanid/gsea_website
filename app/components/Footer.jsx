@@ -18,7 +18,7 @@ export default function Footer() {
         <div className="space-y-4">
           <div className="flex items-center gap-2">
             <div className="p-2 bg-primary text-primary-content rounded-xl font-black text-lg tracking-wider">
-              GSEA
+              
             </div>
             <span className="font-black text-xl tracking-tight text-white">GSEA</span>
           </div>
