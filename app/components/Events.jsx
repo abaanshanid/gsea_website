@@ -116,8 +116,8 @@ const pastEvents = [
 ];
 
 const DiagonalDivider = ({ label, sub, id }) => (
-  <div className="relative overflow-hidden bg-base-content py-10">
-    <div className="absolute inset-0 opacity-5">
+  <div className="relative overflow-hidden bg-white border-y border-base-200 py-10">
+    <div className="absolute inset-0 opacity-0">
       <svg width="100%" height="100%">
         <defs>
           <pattern
@@ -128,7 +128,7 @@ const DiagonalDivider = ({ label, sub, id }) => (
             height="40"
             patternUnits="userSpaceOnUse"
           >
-            <line x1="0" y1="40" x2="40" y2="0" stroke="white" strokeWidth="1" />
+            <line x1="0" y1="40" x2="40" y2="0" stroke="black" strokeWidth="1" />
           </pattern>
         </defs>
         <rect width="100%" height="100%" fill={`url(#${id})`} />
@@ -138,8 +138,8 @@ const DiagonalDivider = ({ label, sub, id }) => (
       <span className="text-primary text-xs font-bold tracking-[0.3em] uppercase">
         {label}
       </span>
-      <div className="flex-1 h-px bg-base-100/20" />
-      <p className="text-base-100/50 text-xs tracking-widest uppercase">{sub}</p>
+      <div className="flex-1 h-px bg-base-content/10" />
+      <p className="text-base-content/50 text-xs tracking-widest uppercase">{sub}</p>
     </div>
   </div>
 );
@@ -149,9 +149,9 @@ export default function Events() {
     <div className="bg-base-100 text-base-content flex flex-col min-h-screen">
 
       {/* ── HERO ── */}
-      <header className="relative min-h-[52vh] flex items-end overflow-hidden bg-base-content">
+      <header className="relative min-h-[52vh] flex items-end overflow-hidden bg-white border-b border-base-200">
         {/* Dot grid */}
-        <div className="absolute inset-0 opacity-10">
+        <div className="absolute inset-0 opacity-60">
           <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
             <defs>
               <pattern
@@ -162,7 +162,7 @@ export default function Events() {
                 height="28"
                 patternUnits="userSpaceOnUse"
               >
-                <circle cx="2" cy="2" r="1" fill="white" />
+                <circle cx="2" cy="2" r="1" fill="black" />
               </pattern>
             </defs>
             <rect width="100%" height="100%" fill="url(#heroDotsEvents)" />
@@ -176,7 +176,7 @@ export default function Events() {
 
         {/* Breadcrumb */}
         <div className="absolute top-8 left-0 right-0 px-6 md:px-16">
-          <div className="flex items-center gap-2 text-base-100/40 text-xs font-medium tracking-widest uppercase">
+          <div className="flex items-center gap-2 text-base-content/40 text-xs font-medium tracking-widest uppercase">
             <span>Home</span>
             <ChevronRight className="w-3 h-3" />
             <span className="text-primary">Events</span>
@@ -190,13 +190,13 @@ export default function Events() {
               <p className="text-primary/80 text-xs font-bold tracking-[0.3em] uppercase mb-4">
                 Global South Engineers Association
               </p>
-              <h1 className="text-5xl md:text-7xl font-black text-base-100 leading-[0.92] tracking-tight">
+              <h1 className="text-5xl md:text-7xl font-black text-base-content leading-[0.92] tracking-tight">
                 OUR
                 <br />
                 <span className="text-primary">EVENTS</span>
               </h1>
             </div>
-            <p className="text-base-100/50 text-sm md:text-base max-w-xs leading-relaxed md:pb-2">
+            <p className="text-base-content/60 text-sm md:text-base max-w-xs leading-relaxed md:pb-2">
               Conferences, workshops and community activities bringing engineers together
             </p>
           </div>
@@ -307,14 +307,14 @@ export default function Events() {
                   className="group flex flex-col md:flex-row items-start md:items-center gap-6 bg-base-100 rounded-2xl p-7 border border-base-300 hover:border-primary/30 hover:shadow-lg transition-all duration-300"
                 >
                   {/* Date block */}
-                  <div className="shrink-0 w-20 h-20 rounded-xl bg-base-content flex flex-col items-center justify-center text-center select-none">
+                  <div className="shrink-0 w-20 h-20 rounded-xl bg-white border border-base-200 flex flex-col items-center justify-center text-center select-none">
                     <span className="text-primary text-2xl font-black leading-none">
                       {c.day}
                     </span>
-                    <span className="text-base-100/60 text-[10px] font-bold tracking-widest uppercase mt-0.5">
+                    <span className="text-base-content/70 text-[10px] font-bold tracking-widest uppercase mt-0.5">
                       {c.month}
                     </span>
-                    <span className="text-base-100/30 text-[9px] tracking-wider">{c.year}</span>
+                    <span className="text-base-content/40 text-[9px] tracking-wider">{c.year}</span>
                   </div>
 
                   {/* Info */}
@@ -386,7 +386,7 @@ export default function Events() {
                   alt={pastEvents[0].title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 absolute inset-0"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-base-content/90 via-base-content/30 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-7">
                   <p className="text-primary text-[10px] font-bold tracking-[0.25em] uppercase mb-2">
                     {pastEvents[0].month}
@@ -423,7 +423,7 @@ export default function Events() {
                       alt={ev.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 absolute inset-0"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-base-content/90 via-base-content/20 to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent" />
                     <div className="absolute bottom-0 left-0 right-0 p-6">
                       <p className="text-primary text-[10px] font-bold tracking-[0.25em] uppercase mb-1">
                         {ev.month}
@@ -438,7 +438,7 @@ export default function Events() {
                           >
                             <Star className="w-3 h-3 fill-success" />
                             {s}
-                          </span>
+ Espacio                          </span>
                         ))}
                       </div>
                     </div>

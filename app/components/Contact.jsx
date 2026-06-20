@@ -65,7 +65,7 @@ function FAQ({ q, a }) {
 }
 
 export default function Contact() {
-  const [formState, setFormState] = useState({ name: "", email: "", org: "", country: "", category: "", msg: "" });
+  const [formState, setFormState] = useState({ name: "", email: "", org: "", country: "", category: "General Enquiry", msg: "" });
   const [submitted, setSubmitted] = useState(false);
 
   const handleSend = (e) => {
@@ -73,30 +73,30 @@ export default function Contact() {
     setSubmitted(true);
     setTimeout(() => {
       setSubmitted(false);
-      setFormState({ name: "", email: "", org: "", country: "", category: "", msg: "" });
+      setFormState({ name: "", email: "", org: "", country: "", category: "General Enquiry", msg: "" });
     }, 4000);
   };
 
   return (
     <div className="bg-base-100 text-base-content flex flex-col min-h-screen selection:bg-primary selection:text-primary-content">
 
-      {/* --- SECTION 1: HERO CONTAINER --- */}
-      <header className="relative overflow-hidden bg-base-content min-h-[42vh] flex items-end border-b-4 border-primary">
-        <div className="absolute inset-0 opacity-[0.12] pointer-events-none mix-blend-overlay">
+      {/* --- SECTION 1: HERO CONTAINER (Swapped from bg-base-content to bg-white) --- */}
+      <header className="relative overflow-hidden bg-white min-h-[42vh] flex items-end border-b border-base-200">
+        <div className="absolute inset-0 opacity-[0.04] pointer-events-none">
           <svg width="100%" height="100%">
             <defs>
               <pattern id="heroDotsC" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-                <circle cx="2" cy="2" r="1.2" fill="white" />
+                <circle cx="2" cy="2" r="1.2" fill="black" />
               </pattern>
             </defs>
             <rect width="100%" height="100%" fill="url(#heroDotsC)" />
           </svg>
         </div>
 
-        <div className="absolute top-[-20%] right-[-10%] w-[500px] h-[500px] bg-primary/20 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute top-[-20%] right-[-10%] w-[500px] h-[500px] bg-primary/10 rounded-full blur-3xl pointer-events-none" />
 
         <div className="absolute inset-0 flex items-center justify-end pr-4 md:pr-12 pointer-events-none select-none overflow-hidden">
-          <span className="text-[14vw] font-black text-base-100/[0.02] leading-none tracking-tighter uppercase">
+          <span className="text-[14vw] font-black text-base-content/[0.02] leading-none tracking-tighter uppercase">
             Connect
           </span>
         </div>
@@ -106,10 +106,10 @@ export default function Contact() {
             <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 text-primary text-[10px] font-bold tracking-[0.25em] uppercase px-3 py-1 rounded-md mb-4 backdrop-blur-md">
               <Mail className="w-3 h-3 animate-pulse" /> Get Involved
             </div>
-            <h1 className="text-4xl sm:text-6xl md:text-7xl font-black text-base-100 leading-[0.95] tracking-tight uppercase">
+            <h1 className="text-4xl sm:text-6xl md:text-7xl font-black text-base-content leading-[0.95] tracking-tight uppercase">
               Get in <span className="text-primary bg-gradient-to-r from-primary to-secondary bg-clip-text">Touch</span>
             </h1>
-            <p className="text-base-100/60 text-sm md:text-base mt-4 max-w-xl leading-relaxed">
+            <p className="text-base-content/50 text-sm md:text-base mt-4 max-w-xl leading-relaxed">
               We'd love to hear from you — reach out for enquiries, partnerships or general questions
             </p>
           </div>
@@ -163,13 +163,13 @@ export default function Contact() {
                   <Handshake className="w-5 h-5" />
                 </div>
                 <div>
-                  <span className="text-[10px] font-bold uppercase opacity-40 block tracking-wider">Parent Organization</span>
+                  <span className="text-[10px] font-bold uppercase opacity-40 block tracking-wider">Parent Organisation</span>
                   <span className="font-extrabold text-sm text-base-content block mt-0.5">Global South Economic Forum</span>
-                  <span className="text-xs text-base-content/60 block">Vist GSEF for more</span>
+                  <span className="text-xs text-base-content/60 block">Visit GSEF for more</span>
                 </div>
               </div>
 
-              {/* SAFE VECTOR SOCIAL GRID (Zero Import Dependency) */}
+              {/* SAFE VECTOR SOCIAL GRID */}
               <div className="card bg-base-200 border border-base-300 shadow-sm p-4 rounded-2xl flex flex-row gap-4 items-center">
                 <div className="p-3 bg-primary/10 text-primary rounded-xl shrink-0">
                   <Globe className="w-5 h-5" />
@@ -220,7 +220,6 @@ export default function Contact() {
             <div className="pt-6 border-t border-base-300 space-y-4">
               <div>
                 <h3 className="text-xs uppercase tracking-widest font-black text-primary mb-1">Frequent Q&A</h3>
-                <p className="text-xl font-black tracking-tight"></p>
               </div>
               <div className="space-y-3">
                 {faqs.map((faq, idx) => (
